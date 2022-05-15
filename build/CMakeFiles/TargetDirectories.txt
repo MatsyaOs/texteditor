@@ -1,0 +1,9 @@
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/install/local.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/install.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/list_install_components.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/rebuild_cache.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/edit_cache.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/install/strip.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/cutefish-texteditor.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/KF5SyntaxHighlighting_QCH.dir
+/home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles/cutefish-texteditor_autogen.dir

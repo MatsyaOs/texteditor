@@ -1,0 +1,2 @@
+/usr/bin/cutefish-texteditor
+/usr/share/applications/cutefish-texteditor.desktop
