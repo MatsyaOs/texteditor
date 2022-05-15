@@ -2,10 +2,10 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
-import FishUI 1.0 as FishUI
-import Cutefish.TextEditor 1.0
+import MatsyaUI 1.0 as MatsyaUI
+import Matsya.TextEditor 1.0
 
-FishUI.Window {
+MatsyaUI.Window {
     id: root
     width: 640
     height: 480
@@ -25,14 +25,14 @@ FishUI.Window {
     headerItem: Item {
         Rectangle {
             anchors.fill: parent
-            color: FishUI.Theme.backgroundColor
+            color: MatsyaUI.Theme.backgroundColor
         }
 
-        FishUI.TabBar {
+        MatsyaUI.TabBar {
             id: _tabbar
             anchors.fill: parent
-            anchors.margins: FishUI.Units.smallSpacing / 2
-            anchors.rightMargin: FishUI.Units.largeSpacing * 4
+            anchors.margins: MatsyaUI.Units.smallSpacing / 2
+            anchors.rightMargin: MatsyaUI.Units.largeSpacing * 4
 
             model: _tabView.count
             currentIndex : _tabView.currentIndex
@@ -41,7 +41,7 @@ FishUI.Window {
                 addTab()
             }
 
-            delegate: FishUI.TabButton {
+            delegate: MatsyaUI.TabButton {
                 id: _tabBtn
                 text: _tabView.contentModel.get(index).tabName
                 implicitHeight: _tabbar.height
@@ -85,7 +85,7 @@ FishUI.Window {
         anchors.fill: parent
         spacing: 0
 
-        FishUI.TabView {
+        MatsyaUI.TabView {
             id: _tabView
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -95,18 +95,18 @@ FishUI.Window {
             id: _bottomItem
             z: 999
             Layout.fillWidth: true
-            Layout.preferredHeight: 20 + FishUI.Units.smallSpacing
+            Layout.preferredHeight: 20 + MatsyaUI.Units.smallSpacing
 
             Rectangle {
                 anchors.fill: parent
-                color: FishUI.Theme.backgroundColor
+                color: MatsyaUI.Theme.backgroundColor
             }
 
             ColumnLayout {
                 anchors.fill: parent
-                anchors.leftMargin: FishUI.Units.smallSpacing
-                anchors.rightMargin: FishUI.Units.smallSpacing
-                anchors.bottomMargin: FishUI.Units.smallSpacing
+                anchors.leftMargin: MatsyaUI.Units.smallSpacing
+                anchors.rightMargin: MatsyaUI.Units.smallSpacing
+                anchors.bottomMargin: MatsyaUI.Units.smallSpacing
 
                 Label {
                     text: _tabView.currentItem ? qsTr("Characters %1").arg(_tabView.currentItem.characterCount)
@@ -128,7 +128,7 @@ FishUI.Window {
         id: textEditorCompeont
 
         TextEditor {
-            fileUrl: "file:///home/cutefish/桌面/winepath"
+            fileUrl: "file:///home/tokyo/winepath"
         }
     }
 

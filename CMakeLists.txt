@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(cutefish-texteditor LANGUAGES CXX)
+project(matsya-texteditor LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -22,11 +22,11 @@ set(PROJECT_SOURCES
         qml.qrc
 )
 
-add_executable(cutefish-texteditor
+add_executable(matsya-texteditor
   ${PROJECT_SOURCES}
 )
 
-target_link_libraries(cutefish-texteditor
+target_link_libraries(matsya-texteditor
   PRIVATE
   Qt5::Core
   Qt5::Quick
@@ -35,7 +35,7 @@ target_link_libraries(cutefish-texteditor
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION /usr/bin)
 
 install(FILES
-    cutefish-texteditor.desktop
+    matsya-texteditor.desktop
     DESTINATION /usr/share/applications/
     COMPONENT Runtime
 )

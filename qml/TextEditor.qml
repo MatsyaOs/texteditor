@@ -3,8 +3,8 @@ import QtQml 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
-import FishUI 1.0 as FishUI
-import Cutefish.TextEditor 1.0
+import MatsyaUI 1.0 as MatsyaUI
+import Matsya.TextEditor 1.0
 
 Item {
     id: control
@@ -25,9 +25,9 @@ Item {
         cursorPosition: body.cursorPosition
         selectionStart: body.selectionStart
         selectionEnd: body.selectionEnd
-        backgroundColor: FishUI.Theme.backgroundColor
+        backgroundColor: MatsyaUI.Theme.backgroundColor
         enableSyntaxHighlighting: true
-        theme: FishUI.Theme.darkMode ? "Breeze Dark" : "Breeze Light"
+        theme: MatsyaUI.Theme.darkMode ? "Breeze Dark" : "Breeze Light"
 
         onSearchFound: {
             body.select(start, end)
@@ -50,7 +50,7 @@ Item {
         Flickable {
             id: _flickable
 
-            FishUI.WheelHandler {
+            MatsyaUI.WheelHandler {
                 id: wheelHandler
                 target: _flickable
             }
@@ -74,14 +74,14 @@ Item {
                 activeFocusOnPress: true
                 activeFocusOnTab: true
 
-                leftPadding: _linesCounter.width + FishUI.Units.smallSpacing
-                padding: FishUI.Units.smallSpacing
-                color: FishUI.Theme.textColor
+                leftPadding: _linesCounter.width + MatsyaUI.Units.smallSpacing
+                padding: MatsyaUI.Units.smallSpacing
+                color: MatsyaUI.Theme.textColor
 
                 font.family: "Noto Mono"
 
                 background: Rectangle {
-                    color: FishUI.Theme.backgroundColor
+                    color: MatsyaUI.Theme.backgroundColor
                 }
 
                 Keys.enabled: true
@@ -183,8 +183,8 @@ Item {
                     width: 32
                     height: parent.height
                     opacity: isCurrentItem ? 1 : 0.7
-                    color: isCurrentItem ? FishUI.Theme.highlightColor
-                                         : FishUI.Theme.textColor
+                    color: isCurrentItem ? MatsyaUI.Theme.highlightColor
+                                         : MatsyaUI.Theme.textColor
                     font.pointSize: body.font.pointSize
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
