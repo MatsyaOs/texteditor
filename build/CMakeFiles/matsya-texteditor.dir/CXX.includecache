@@ -6,49 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp
 
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_documenthandler.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_documenthandler.cpp
 memory
 -
 ../../../src/documenthandler.h
-/home/tokyo/clone/cuteclone/texteditor/src/documenthandler.h
+/home/tokyo/Documents/GitHub/texteditor/src/documenthandler.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp
 memory
 -
 ../../../src/highlightmodel.h
-/home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.h
+/home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp
 memory
 -
 ../../../src/texteditor.h
-/home/tokyo/clone/cuteclone/texteditor/src/texteditor.h
+/home/tokyo/Documents/GitHub/texteditor/src/texteditor.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/mocs_compilation.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/mocs_compilation.cpp
 UVLADIE3JM/moc_documenthandler.cpp
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_documenthandler.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_documenthandler.cpp
 UVLADIE3JM/moc_highlightmodel.cpp
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp
 UVLADIE3JM/moc_texteditor.cpp
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp
 
-/home/tokyo/clone/cuteclone/texteditor/src/documenthandler.cpp
+/home/tokyo/Documents/GitHub/texteditor/src/documenthandler.cpp
 documenthandler.h
-/home/tokyo/clone/cuteclone/texteditor/src/documenthandler.h
+/home/tokyo/Documents/GitHub/texteditor/src/documenthandler.h
 QAbstractTextDocumentLayout
 -
 QDebug
@@ -86,7 +86,7 @@ KSyntaxHighlighting/SyntaxHighlighter
 KSyntaxHighlighting/Theme
 -
 
-/home/tokyo/clone/cuteclone/texteditor/src/documenthandler.h
+/home/tokyo/Documents/GitHub/texteditor/src/documenthandler.h
 QAbstractListModel
 -
 QDebug
@@ -104,13 +104,13 @@ QTimer
 QUrl
 -
 
-/home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.cpp
+/home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.cpp
 highlightmodel.h
-/home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.h
+/home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.h
 QDebug
 -
 
-/home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.h
+/home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.h
 QObject
 -
 KSyntaxHighlighting/Repository
@@ -118,23 +118,23 @@ KSyntaxHighlighting/Repository
 KSyntaxHighlighting/Definition
 -
 
-/home/tokyo/clone/cuteclone/texteditor/src/main.cpp
+/home/tokyo/Documents/GitHub/texteditor/src/main.cpp
 QGuiApplication
 -
 QQmlApplicationEngine
 -
 documenthandler.h
-/home/tokyo/clone/cuteclone/texteditor/src/documenthandler.h
+/home/tokyo/Documents/GitHub/texteditor/src/documenthandler.h
 highlightmodel.h
-/home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.h
+/home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.h
 texteditor.h
-/home/tokyo/clone/cuteclone/texteditor/src/texteditor.h
+/home/tokyo/Documents/GitHub/texteditor/src/texteditor.h
 
-/home/tokyo/clone/cuteclone/texteditor/src/texteditor.cpp
+/home/tokyo/Documents/GitHub/texteditor/src/texteditor.cpp
 texteditor.h
-/home/tokyo/clone/cuteclone/texteditor/src/texteditor.h
+/home/tokyo/Documents/GitHub/texteditor/src/texteditor.h
 
-/home/tokyo/clone/cuteclone/texteditor/src/texteditor.h
+/home/tokyo/Documents/GitHub/texteditor/src/texteditor.h
 QObject
 -
 

@@ -1,5 +1,5 @@
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp: /home/tokyo/clone/cuteclone/texteditor/src/texteditor.h \
-  /home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/moc_predefs.h \
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_texteditor.cpp: /home/tokyo/Documents/GitHub/texteditor/src/texteditor.h \
+  /home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/c++/10/algorithm \

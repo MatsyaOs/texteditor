@@ -1,5 +1,5 @@
-/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp: /home/tokyo/clone/cuteclone/texteditor/src/highlightmodel.h \
-  /home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor_autogen/moc_predefs.h \
+/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/UVLADIE3JM/moc_highlightmodel.cpp: /home/tokyo/Documents/GitHub/texteditor/src/highlightmodel.h \
+  /home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor_autogen/moc_predefs.h \
   /usr/include/KF5/KSyntaxHighlighting/Definition \
   /usr/include/KF5/KSyntaxHighlighting/Repository \
   /usr/include/KF5/KSyntaxHighlighting/definition.h \

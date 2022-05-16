@@ -67,13 +67,25 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tokyo/clone/cuteclone/texteditor
+CMAKE_SOURCE_DIR = /home/tokyo/Documents/GitHub/texteditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tokyo/clone/cuteclone/texteditor/build
+CMAKE_BINARY_DIR = /home/tokyo/Documents/GitHub/texteditor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -86,6 +98,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -120,34 +143,11 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles /home/tokyo/clone/cuteclone/texteditor/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles /home/tokyo/Documents/GitHub/texteditor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tokyo/clone/cuteclone/texteditor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,17 +176,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cutefish-texteditor
+# Target rules for targets named matsya-texteditor
 
 # Build rule for target.
-cutefish-texteditor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cutefish-texteditor
-.PHONY : cutefish-texteditor
+matsya-texteditor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matsya-texteditor
+.PHONY : matsya-texteditor
 
 # fast build rule for target.
-cutefish-texteditor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/build
-.PHONY : cutefish-texteditor/fast
+matsya-texteditor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/build
+.PHONY : matsya-texteditor/fast
 
 #=============================================================================
 # Target rules for targets named KF5SyntaxHighlighting_QCH
@@ -202,71 +202,71 @@ KF5SyntaxHighlighting_QCH/fast:
 .PHONY : KF5SyntaxHighlighting_QCH/fast
 
 #=============================================================================
-# Target rules for targets named cutefish-texteditor_autogen
+# Target rules for targets named matsya-texteditor_autogen
 
 # Build rule for target.
-cutefish-texteditor_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cutefish-texteditor_autogen
-.PHONY : cutefish-texteditor_autogen
+matsya-texteditor_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matsya-texteditor_autogen
+.PHONY : matsya-texteditor_autogen
 
 # fast build rule for target.
-cutefish-texteditor_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor_autogen.dir/build.make CMakeFiles/cutefish-texteditor_autogen.dir/build
-.PHONY : cutefish-texteditor_autogen/fast
+matsya-texteditor_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor_autogen.dir/build.make CMakeFiles/matsya-texteditor_autogen.dir/build
+.PHONY : matsya-texteditor_autogen/fast
 
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.o: cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.o: matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
 
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.o
-
-# target to build an object file
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
-
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.i: cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
-
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.i
-
-# target to preprocess a source file
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
-
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.s: cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
-
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.s
-
-# target to generate assembly for a file
-cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
-.PHONY : cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
-
-cutefish-texteditor_autogen/mocs_compilation.o: cutefish-texteditor_autogen/mocs_compilation.cpp.o
-
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.o
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.o
 
 # target to build an object file
-cutefish-texteditor_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/mocs_compilation.cpp.o
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.cpp.o
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.o
 
-cutefish-texteditor_autogen/mocs_compilation.i: cutefish-texteditor_autogen/mocs_compilation.cpp.i
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.i: matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
 
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.i
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.i
 
 # target to preprocess a source file
-cutefish-texteditor_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/mocs_compilation.cpp.i
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.cpp.i
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.i
 
-cutefish-texteditor_autogen/mocs_compilation.s: cutefish-texteditor_autogen/mocs_compilation.cpp.s
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.s: matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
 
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.s
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.s
 
 # target to generate assembly for a file
-cutefish-texteditor_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/cutefish-texteditor_autogen/mocs_compilation.cpp.s
-.PHONY : cutefish-texteditor_autogen/mocs_compilation.cpp.s
+matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
+.PHONY : matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.cpp.s
+
+matsya-texteditor_autogen/mocs_compilation.o: matsya-texteditor_autogen/mocs_compilation.cpp.o
+
+.PHONY : matsya-texteditor_autogen/mocs_compilation.o
+
+# target to build an object file
+matsya-texteditor_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/mocs_compilation.cpp.o
+.PHONY : matsya-texteditor_autogen/mocs_compilation.cpp.o
+
+matsya-texteditor_autogen/mocs_compilation.i: matsya-texteditor_autogen/mocs_compilation.cpp.i
+
+.PHONY : matsya-texteditor_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+matsya-texteditor_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/mocs_compilation.cpp.i
+.PHONY : matsya-texteditor_autogen/mocs_compilation.cpp.i
+
+matsya-texteditor_autogen/mocs_compilation.s: matsya-texteditor_autogen/mocs_compilation.cpp.s
+
+.PHONY : matsya-texteditor_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+matsya-texteditor_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/matsya-texteditor_autogen/mocs_compilation.cpp.s
+.PHONY : matsya-texteditor_autogen/mocs_compilation.cpp.s
 
 src/documenthandler.o: src/documenthandler.cpp.o
 
@@ -274,7 +274,7 @@ src/documenthandler.o: src/documenthandler.cpp.o
 
 # target to build an object file
 src/documenthandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/documenthandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/documenthandler.cpp.o
 .PHONY : src/documenthandler.cpp.o
 
 src/documenthandler.i: src/documenthandler.cpp.i
@@ -283,7 +283,7 @@ src/documenthandler.i: src/documenthandler.cpp.i
 
 # target to preprocess a source file
 src/documenthandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/documenthandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/documenthandler.cpp.i
 .PHONY : src/documenthandler.cpp.i
 
 src/documenthandler.s: src/documenthandler.cpp.s
@@ -292,7 +292,7 @@ src/documenthandler.s: src/documenthandler.cpp.s
 
 # target to generate assembly for a file
 src/documenthandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/documenthandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/documenthandler.cpp.s
 .PHONY : src/documenthandler.cpp.s
 
 src/highlightmodel.o: src/highlightmodel.cpp.o
@@ -301,7 +301,7 @@ src/highlightmodel.o: src/highlightmodel.cpp.o
 
 # target to build an object file
 src/highlightmodel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/highlightmodel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/highlightmodel.cpp.o
 .PHONY : src/highlightmodel.cpp.o
 
 src/highlightmodel.i: src/highlightmodel.cpp.i
@@ -310,7 +310,7 @@ src/highlightmodel.i: src/highlightmodel.cpp.i
 
 # target to preprocess a source file
 src/highlightmodel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/highlightmodel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/highlightmodel.cpp.i
 .PHONY : src/highlightmodel.cpp.i
 
 src/highlightmodel.s: src/highlightmodel.cpp.s
@@ -319,7 +319,7 @@ src/highlightmodel.s: src/highlightmodel.cpp.s
 
 # target to generate assembly for a file
 src/highlightmodel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/highlightmodel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/highlightmodel.cpp.s
 .PHONY : src/highlightmodel.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -328,7 +328,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -337,7 +337,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -346,7 +346,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/texteditor.o: src/texteditor.cpp.o
@@ -355,7 +355,7 @@ src/texteditor.o: src/texteditor.cpp.o
 
 # target to build an object file
 src/texteditor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/texteditor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/texteditor.cpp.o
 .PHONY : src/texteditor.cpp.o
 
 src/texteditor.i: src/texteditor.cpp.i
@@ -364,7 +364,7 @@ src/texteditor.i: src/texteditor.cpp.i
 
 # target to preprocess a source file
 src/texteditor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/texteditor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/texteditor.cpp.i
 .PHONY : src/texteditor.cpp.i
 
 src/texteditor.s: src/texteditor.cpp.s
@@ -373,7 +373,7 @@ src/texteditor.s: src/texteditor.cpp.s
 
 # target to generate assembly for a file
 src/texteditor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cutefish-texteditor.dir/build.make CMakeFiles/cutefish-texteditor.dir/src/texteditor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matsya-texteditor.dir/build.make CMakeFiles/matsya-texteditor.dir/src/texteditor.cpp.s
 .PHONY : src/texteditor.cpp.s
 
 # Help Target
@@ -389,14 +389,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... KF5SyntaxHighlighting_QCH"
-	@echo "... cutefish-texteditor_autogen"
-	@echo "... cutefish-texteditor"
-	@echo "... cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.o"
-	@echo "... cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.i"
-	@echo "... cutefish-texteditor_autogen/EWIEGA46WW/qrc_qml.s"
-	@echo "... cutefish-texteditor_autogen/mocs_compilation.o"
-	@echo "... cutefish-texteditor_autogen/mocs_compilation.i"
-	@echo "... cutefish-texteditor_autogen/mocs_compilation.s"
+	@echo "... matsya-texteditor_autogen"
+	@echo "... matsya-texteditor"
+	@echo "... matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.o"
+	@echo "... matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.i"
+	@echo "... matsya-texteditor_autogen/EWIEGA46WW/qrc_qml.s"
+	@echo "... matsya-texteditor_autogen/mocs_compilation.o"
+	@echo "... matsya-texteditor_autogen/mocs_compilation.i"
+	@echo "... matsya-texteditor_autogen/mocs_compilation.s"
 	@echo "... src/documenthandler.o"
 	@echo "... src/documenthandler.i"
 	@echo "... src/documenthandler.s"

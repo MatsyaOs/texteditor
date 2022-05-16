@@ -1,2 +1,2 @@
-/usr/bin/cutefish-texteditor
-/usr/share/applications/cutefish-texteditor.desktop
+/usr/bin/matsya-texteditor
+/usr/share/applications/matsya-texteditor.desktop

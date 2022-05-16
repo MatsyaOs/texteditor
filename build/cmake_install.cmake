@@ -1,4 +1,4 @@
-# Install script for directory: /home/tokyo/clone/cuteclone/texteditor
+# Install script for directory: /home/tokyo/Documents/GitHub/texteditor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,39 +43,39 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/usr/bin/cutefish-texteditor" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/cutefish-texteditor")
+  if(EXISTS "$ENV{DESTDIR}/usr/bin/matsya-texteditor" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/matsya-texteditor")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/usr/bin/cutefish-texteditor"
+         FILE "$ENV{DESTDIR}/usr/bin/matsya-texteditor"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/bin/cutefish-texteditor")
+   "/usr/bin/matsya-texteditor")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/bin" TYPE EXECUTABLE FILES "/home/tokyo/clone/cuteclone/texteditor/build/cutefish-texteditor")
-  if(EXISTS "$ENV{DESTDIR}/usr/bin/cutefish-texteditor" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/cutefish-texteditor")
+file(INSTALL DESTINATION "/usr/bin" TYPE EXECUTABLE FILES "/home/tokyo/Documents/GitHub/texteditor/build/matsya-texteditor")
+  if(EXISTS "$ENV{DESTDIR}/usr/bin/matsya-texteditor" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/bin/matsya-texteditor")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/bin/cutefish-texteditor")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/bin/matsya-texteditor")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/share/applications/cutefish-texteditor.desktop")
+   "/usr/share/applications/matsya-texteditor.desktop")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/applications" TYPE FILE FILES "/home/tokyo/clone/cuteclone/texteditor/cutefish-texteditor.desktop")
+file(INSTALL DESTINATION "/usr/share/applications" TYPE FILE FILES "/home/tokyo/Documents/GitHub/texteditor/matsya-texteditor.desktop")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -86,5 +86,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tokyo/clone/cuteclone/texteditor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tokyo/Documents/GitHub/texteditor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
