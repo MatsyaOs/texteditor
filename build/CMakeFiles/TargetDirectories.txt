@@ -1,9 +1,0 @@
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/install/strip.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/install/local.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/edit_cache.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/install.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/list_install_components.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/rebuild_cache.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/matsya-texteditor.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/KF5SyntaxHighlighting_QCH.dir
-/home/tokyo/Documents/GitHub/texteditor/build/CMakeFiles/matsya-texteditor_autogen.dir
