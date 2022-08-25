@@ -1,0 +1,9 @@
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/KF5SyntaxHighlighting_QCH.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/matsya-texteditor.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/edit_cache.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/rebuild_cache.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/list_install_components.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/install.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/install/local.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/install/strip.dir
+/home/tokyo/matsyaos/matsyaos-dependencies/texteditor/build/CMakeFiles/matsya-texteditor_autogen.dir
